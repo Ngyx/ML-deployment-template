@@ -1,0 +1,23 @@
+# Package Overview
+package_name: regression_model
+
+# Data Files
+training_data_file: train.xlsx
+test_data_file: test.xlsx
+
+# Variables
+# The variable we are attempting to predict (sale price)
+target: Y
+
+pipeline_name: regression_model
+pipeline_save_file: regression_model_output_v
+
+features:
+  - X1
+  - X2
+
+# set train/test split
+test_size: 0.1
+
+# to set the random seed
+random_state: 0
